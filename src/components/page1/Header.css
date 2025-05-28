@@ -1,0 +1,61 @@
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url("../../../images/iteration-1-images/home-banner.png");
+  background-size: cover; 
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-position: center;
+}
+
+/* Logo */
+.logo {
+  padding: 2rem 0;
+}
+
+/* Fırsatı kaçırma metni */
+.firsat-text {
+  font-family: Satisfy;
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--yellow);
+}
+
+/* KOD ACIKTIRIR PIZZA, DOYURUR BAŞLIĞI */
+.pizza-text {
+  color:#FFFFFF;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-size: 5.375rem;
+}
+
+/* ACIKTIM Butonu */
+.btn {
+  font-family: Barlow;
+  font-weight: 600;
+  font-size: 1.125rem;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 3.125rem;
+  padding: 1rem 3.75rem;
+  margin-top: 1.5rem;
+}
+
+/* ACIKTIM Butonu */
+.btn a {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
