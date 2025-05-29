@@ -1,7 +1,6 @@
-import logo from "../../../images/iteration-1-images/logo.svg";
-import "./Header.css";
+import logo from "../../images/iteration-1-images/logo.svg";
 
-export default function Header() {
+export default function Header({handleClick}) {
     return (
         <header>
             <div className="header">
@@ -11,7 +10,7 @@ export default function Header() {
                         <p className="firsat-text">fırsatı kaçırma</p>
                         <h1 className="pizza-text">KOD ACIKTIRIR</h1>
                         <h1 className="pizza-text">PIZZA, DOYURUR</h1>
-                        <button className="btn"><a href="">ACIKTIM</a></button>
+                        <button type="button" className="btn" onClick={handleClick}>ACIKTIM</button>
                     </div>
                 </div>
             </div>

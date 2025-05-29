@@ -1,10 +1,9 @@
-import icons1 from "../../../images/iteration-2-images/icons/1.svg"
-import icons2 from "../../../images/iteration-2-images/icons/2.svg"
-import icons3 from "../../../images/iteration-2-images/icons/3.svg"
-import icons4 from "../../../images/iteration-2-images/icons/4.svg"
-import icons5 from "../../../images/iteration-2-images/icons/5.svg"
-import icons6 from "../../../images/iteration-2-images/icons/6.svg"
-import "./Navbar.css"
+import icons1 from "../../images/iteration-2-images/icons/1.svg"
+import icons2 from "../../images/iteration-2-images/icons/2.svg"
+import icons3 from "../../images/iteration-2-images/icons/3.svg"
+import icons4 from "../../images/iteration-2-images/icons/4.svg"
+import icons5 from "../../images/iteration-2-images/icons/5.svg"
+import icons6 from "../../images/iteration-2-images/icons/6.svg"
 
 export default function Navbar() {
     return (

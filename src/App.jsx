@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import workintech from '/workintech.svg'
-import './App.css'
-import Header from "./components/page1/Header"
-import Navbar from "./components/page1/Navbar"
-function App() {
-  const [count, setCount] = useState(0)
+import HomePage from "./components/HomePage";
+import Order from "./components/Order";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './App.css';
 
+function App() {
   return (
-    <>
-    <Header />
-    <Navbar />
-    </>
-  )
+    <Router>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/order" component={Order} />
+      </Switch>
+    </Router>
+  );
 }
 
-export default App
+export default App;

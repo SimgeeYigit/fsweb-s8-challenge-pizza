@@ -1,0 +1,485 @@
+.order-header {
+    background-color: var(--red);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-logo {
+    width: 362px;
+    height: 46px;
+}
+
+/*Sayfanın Ortasında Konumlandır */
+.order-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh; 
+    width: 100%; 
+}
+
+/*Container Ortala */
+.order-container {
+    width: 532px;
+}
+
+/* Başlık */
+.pizza-title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #292929;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+/*Fiyat ve Puan */
+.pizza-info {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.pizza-price {
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 0.5;
+}
+
+.pizza-rating {
+    font-size: 14px;
+    color: #5F5F5F;
+}
+
+.pizza-people{
+    font-size: 14px;
+    color: #5F5F5F;
+}
+
+/* Açıklama */
+.pizza-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #5F5F5F;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/*Boyut ve Hamur Seçimi için Yatayda Hizalama */
+.pizza-options {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+
+
+/*Boyut Seçimi */
+.size-selection,
+.dough-selection {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.size-selection,
+.dough-selection input {
+    gap: 10px;
+}
+
+/*Boyut Seçiminde Başlık Stilini Düzenleme */
+.size-selection h4,
+.dough-selection h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.size-selection h4::after {
+    content: " *";
+    color:#D80027; 
+    font-weight: bold;
+}
+
+.dough-selection h4::after {
+    content: " *";
+    color: #D80027;
+    font-weight: bold;
+}
+
+
+/*Hamur Seçimi Dropdown */
+.dough-selection select {
+    width: 100%;
+    height: 38px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/*Boyut Seçimindeki Radio Butonları */
+.size-selection label {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.size-selection input {
+    margin-right: 8px;
+}
+
+/*Ekstra Malzemeler */
+.extra-ingredients {
+    margin-top: 20px;
+}
+
+.extra-ingredients h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.extra-ingredients p {
+    font-size: 14px;
+    color: #5F5F5F;
+    margin-bottom: 20px;
+}
+
+/*Ek Malzemeler Listesi */
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 75px;
+}
+
+.ingredients-list label {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/*Checkbox Boyutu */
+.ingredients-list input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+/*Kullanıcı Adı Inputu */
+.order-name {
+    margin-top: 20px;
+}
+
+.order-nav {
+    color: white;
+    position: relative;
+    top: 60px;
+    right: 175px;
+}
+
+.order-name::after {
+    content: "";
+    display: block;
+    width: 523px; 
+    height: 1px; 
+    background-color: rgba(95, 95, 95, 0.5); 
+    margin-top: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-name h4 {
+    font-family: Barlow;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.76px;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+
+.order-name input {
+    width: 531px;
+    height: 56px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+}
+
+
+/*Sipariş Notu */
+.order-note {
+    margin-top: 20px;
+}
+
+.order-note::after {
+    content: "";
+    display: block;
+    width: 523px; 
+    height: 1px; 
+    background-color: rgba(95, 95, 95, 0.5); 
+    margin-top: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.order-note h4 {
+    font-family: Barlow;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.76px;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+    
+}
+.order-note textarea {
+    width: 531px;
+    height: 56px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical; 
+}
+
+
+/*Sipariş Kontrol Paneli */
+.order-summary {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 105px;
+    position: relative;
+}
+
+/*Adet Seçim Kutusu*/
+.quantity-control {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 240px;
+    height: 57px;
+}
+
+/*Butonlar  */
+.quantity-control button {
+    background-color: #FDC913;
+    border: none;
+    padding: 10px 15px;
+    font-size: 22px;
+    cursor: pointer;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*Orta Kısım (Sayı Gösterme) */
+.quantity-control span {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #FAF7F2;
+    text-align: center;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Sipariş Toplam Alanı */
+.order-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 150px;
+    padding-bottom: 80px;
+}
+
+.order-total .order-button {
+    margin-top: 254px;
+    width: 300px;
+    margin-left: 115px;
+    border-radius: 6px;
+}
+
+
+.order-summary .order-total {
+    align-self: center;
+}
+
+.summary-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15x;
+    text-align: left;
+}
+
+
+.order-total p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.order-total h4 {
+    font-size: 22px;
+    margin-top: 10px;
+    
+}
+
+.order-total .summary-item {
+    color: grey; 
+}
+
+.summary-item{
+    
+        font-size: 14px;
+        color: #D9D9D9;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        margin-bottom: 15px;
+}
+
+.summary-total {
+    font-size: 14px;
+    color: #CE2829;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*Sipariş Ver Butonu */
+.order-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 344px;
+    height: 66px;
+    background: #FDC913;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
+/* Responsive- */
+@media (max-width: 768px) {
+    .order-wrapper {
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .order-container {
+        width: 90%;
+        max-width: 420px; 
+    }
+
+
+    .pizza-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .pizza-description {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    
+    .pizza-options {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .size-selection,
+    .dough-selection {
+        width: 48%;
+    }
+
+    /*Ek Malzemeler - Mobilde 2'li sıralama */
+    .ingredients-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .ingredients-list label {
+        flex-basis: calc(50% - 10px); /* 2'li sıralama */
+    }
+
+
+    .order-note::after {
+        width: 100%;
+    }
+
+
+    .order-summary {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 420px; 
+    }
+
+    .order-total {
+        width: 100%;
+        max-width: 420px;
+        height: 160px;
+        
+    }
+
+    .quantity-control {
+        width: 100%; 
+        max-width: 150px; 
+        display: flex;
+        justify-content: left;
+    }
+
+    .order-button {
+        width: 48%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .order-summary {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
