@@ -27,15 +27,16 @@ const Order = () => {
         "Pepperoni",
         "Sosis",
         "Kanada Jambonu",
-        "Domates",
-        "Soğan",
         "Tavuk Izgara",
+        "Soğan",
+        "Domates",
         "Mısır",
         "Sucuk",
         "Jalapeno",
-        "Biber",
-        "Ananas",
         "Sarımsak",
+        "Biber",
+        "Avocado",
+        "Ananas",
         "Kabak",
     ];
 
@@ -163,7 +164,7 @@ const Order = () => {
 
                     <div className="pizza-options">
                         <div className="size-selection">
-                            <h4>Boyut Seç</h4>
+                            <h4 className="select">Boyut Seç</h4>
                             {["Küçük", "Orta", "Büyük"].map((size) => (
                                 <label key={size}>
                                     <input
@@ -177,7 +178,7 @@ const Order = () => {
                             ))}
                         </div>
                         <div className="dough-selection">
-                            <h4>Hamur Seç </h4>
+                            <h4 className="select">Hamur Seç </h4>
                             <select value={selectedDough} onChange={handleDoughChange}>
                                 <option disabled>Hamur Kalınlığı</option>
                                 <option>İnce</option>
@@ -233,12 +234,6 @@ const Order = () => {
                             <button onClick={() => handleQuantityChange(1)}>+</button>
                         </div>
 
-                        <div className="order-count">
-                            <button className="order-count-button">-</button>
-                            <p>{quantity}</p>
-                            <button className="order-count-button">+</button>
-                        </div>
-                              
                         <div className="order-total">
                             <h4 className="summary-title">Sipariş Toplamı</h4>
                             <p className="summary-item">
