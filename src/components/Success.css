@@ -1,0 +1,125 @@
+
+.logo {
+    width: 363px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.success {
+    background-color: var(--red);
+    width: 100vw;
+    height: 1080px;
+}
+
+.success-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.success-content1 {
+    font-family: Satisfy;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--yellow)
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.pizza-title {
+    font-family: Barlow;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.pizza-size {
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.pizza-dough {
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.additional-ingredients {
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.orders1 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.success-content2 {
+    font-family: Roboto Condensed;
+    font-size: 86px;
+    font-weight: 300;
+    color: white;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #FAF7F2;
+}
+
+.total-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #FAF7F2;
+    border-radius: 6px;
+    width: 350px;
+    height: 197px;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+
+.total-container p {
+    color: white;
+    margin-left: 50px;
+}
+
+.total-text {
+    font-family: Barlow;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.choices {
+    font-family: Barlow;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.total {
+    font-family: Barlow;
+    font-weight: 600;
+    font-size: 18px;
+}

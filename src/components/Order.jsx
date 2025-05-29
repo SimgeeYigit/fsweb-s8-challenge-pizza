@@ -23,6 +23,8 @@ const Order = () => {
     const extraPrice = 5;
     const totalPrice = basePrice + selectedExtras.length * extraPrice;
 
+    const [pizzaTitle, setPizzaTitle] = useState();
+    
     const extras = [
         "Pepperoni",
         "Sosis",
@@ -146,7 +148,7 @@ const Order = () => {
             <div className="order-wrapper">
                 <PopupMessage message={popupMessage} onClose={() => setPopupMessage("")} />
                 <div className="order-container">
-                    <h2 className="pizza-title">Position Absolute Acı Pizza</h2>
+                    <h2 className="pizza-title">{pizzaTitle}</h2>
                     <div className="pizza-info">
                         <span className="pizza-price">85.50₺</span>
                         <span className="pizza-rating">4.9</span>
