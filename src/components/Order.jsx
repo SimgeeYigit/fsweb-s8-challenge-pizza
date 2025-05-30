@@ -5,7 +5,7 @@ import PopupMessage from "./PopupMessage";
 import axios from "axios";
 import Logo from "../../images/iteration-1-images/logo.svg"
 import HomePage from "./HomePage"
-
+import Success from "./Success"
 const Order = () => {
     const history = useHistory();
 
@@ -24,7 +24,7 @@ const Order = () => {
     const totalPrice = basePrice + selectedExtras.length * extraPrice;
 
     const [pizzaTitle, setPizzaTitle] = useState();
-    
+
     const extras = [
         "Pepperoni",
         "Sosis",
@@ -41,10 +41,6 @@ const Order = () => {
         "Ananas",
         "Kabak",
     ];
-
-    const handleClick = () => {
-        history.push("/homePage");
-    };
 
     const handleNameChange = (event) => {
         const newName = event.target.value;
@@ -117,11 +113,15 @@ const Order = () => {
         };
 
         axios
-            .post("https://reqres.in/api/pizza", orderData)
+            .post("https://reqres.in/api/pizza", orderData, {
+                headers: {
+                    "x-api-key": "reqres-free-v1"
+                }
+            })
             .then((response) => {
-                console.log("API Response:", response.data);
+                console.log(response);
                 setTimeout(() => {
-                    history.push("/success");
+                    history.push({pathname:"/success", state: orderData});
                 }, 1000);
             })
             .catch((error) => {
@@ -139,7 +139,7 @@ const Order = () => {
                 <img className="order-logo" src={Logo} />
                 <nav>
                     <p className="order-nav">
-                        <span onClick={handleClick}>Anasayfa</span>
+                        <span onClick={history.goBack}>Anasayfa</span>
                         <span> - </span>
                         <strong>Sipariş Oluştur</strong>
                     </p>
@@ -148,7 +148,7 @@ const Order = () => {
             <div className="order-wrapper">
                 <PopupMessage message={popupMessage} onClose={() => setPopupMessage("")} />
                 <div className="order-container">
-                    <h2 className="pizza-title">{pizzaTitle}</h2>
+                    <h2 className="pizza-title">Position Absolute Acı Pizza</h2>
                     <div className="pizza-info">
                         <span className="pizza-price">85.50₺</span>
                         <span className="pizza-rating">4.9</span>

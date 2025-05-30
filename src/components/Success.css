@@ -28,12 +28,12 @@
     color: var(--yellow)
 }
 
-.order-summary {
+.order-summary1 {
     display: flex;
     flex-direction: column;
 }
 
-.pizza-title {
+.pizza-title1 {
     font-family: Barlow;
     font-size: 22px;
     font-weight: 600;
@@ -65,12 +65,14 @@
     font-weight: 400;
     color: white;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .orders {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .orders1 {
@@ -122,4 +124,12 @@
     font-family: Barlow;
     font-weight: 600;
     font-size: 18px;
+}
+
+p.total span {
+    padding-left: 130px;
+}
+
+p.choices span {
+    padding-left: 145px;
 }
