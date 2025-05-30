@@ -133,3 +133,9 @@ p.total span {
 p.choices span {
     padding-left: 145px;
 }
+
+@media (max-width: 500px) {
+    .success-content2 {
+        text-align: center;
+    }
+}

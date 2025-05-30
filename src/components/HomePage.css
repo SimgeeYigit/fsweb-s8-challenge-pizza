@@ -394,3 +394,76 @@ body, p, h1, h2, h3, h4, h5, h6 {
   padding-right: 20rem;
 }
 
+/* mobile media query */
+
+@media (max-width: 500px) {
+  .header {
+    width: 100%;
+  }
+  /* Navbar */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0; 
+  }
+  
+  .menu-items {
+    width: 48%; 
+    padding-bottom: 0.5rem; 
+  }
+
+  /* Navbar */
+  .menu2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .menu2-items {
+    width: 48%; 
+    padding-bottom: 0.5rem; 
+  }
+
+  /* Sipariş ver */
+  .siparis-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .siparis-item1,
+  .siparis-item21,
+  .siparis-item22 {
+    width: 420px; 
+    box-sizing: border-box;
+    transform: 0.5;
+    background-position: top;
+  }
+
+  /* Fiyat */
+  .food {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Footer */
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer-menu {
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
+  }
+
+  .contact ul {
+    padding: 1.25rem;
+  }
+
+  .footer-img {
+    padding-left: 1.25rem;
+  }
+}

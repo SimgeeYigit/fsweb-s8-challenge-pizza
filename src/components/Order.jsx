@@ -122,6 +122,7 @@ const Order = () => {
                 console.log(response);
                 setTimeout(() => {
                     history.push({pathname:"/success", state: orderData});
+                    window.scrollTo(0, 0);
                 }, 1000);
             })
             .catch((error) => {
